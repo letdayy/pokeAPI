@@ -20,6 +20,8 @@ const Title = styled.h1`
 
 const Cards = styled.div`
   display: flex;
+  justify-content: center;
+  
   flex-wrap: wrap;
 `;
 

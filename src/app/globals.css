@@ -37,4 +37,16 @@ body {
 }
 
 
+.custom-card {
+  width: 15%;
+  margin: 10px;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .custom-card {
+    width: 40%;
+  }
+}

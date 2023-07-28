@@ -15,7 +15,7 @@ export default function Search({ filteredPokemon }: SearchProps): ReactElement {
   };
 
   return (
-    <MDBInputGroup style={{ width: '50%', margin: '30px 10px' }}>
+    <MDBInputGroup style={{ width: '80%', margin: '30px 10px' }}>
       <MDBInput label='Search' value={searchTerm} onChange={handleInputChange} style={{backgroundColor: 'white'}} />
       <MDBBtn rippleColor='dark'>
         <MDBIcon icon='search' />

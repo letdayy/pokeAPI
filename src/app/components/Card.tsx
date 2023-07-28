@@ -14,7 +14,7 @@ interface CardProps {
 
 export default function Card({ pokemon }: CardProps): ReactElement {
   return (
-    <MDBCard style={{ width: '15%', margin: '10px', alignItems: 'center', boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>
+    <MDBCard className='custom-card'>
       <MDBCardImage src={pokemon.sprites.front_default} position='top' alt='Card Image' />
       <MDBCardBody>
         <MDBCardTitle style={{fontFamily: 'comic-sans'}}>{pokemon.name}</MDBCardTitle>
