@@ -20,9 +20,11 @@ const Title = styled.h1`
 
 const Cards = styled.div`
   display: flex;
-  justify-content: center;
-  
   flex-wrap: wrap;
+
+  @media (max-width: 1400px) {
+  justify-content: center;
+  }
 `;
 
 interface PokemonData {
