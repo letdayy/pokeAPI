@@ -66,7 +66,7 @@ const Home: React.FC<HomeProps> = (): JSX.Element => {
 
   return (
     <Body>
-      <Title>PokeAPI</Title>
+      <Title>Pokedex</Title>
       <Search filteredPokemon={filteredPokemon} />
       <Cards>
         {pokemons.filter((pokemon) => pokemon.name.includes(filterPokemon)).map((pokemon) => (
