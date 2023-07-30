@@ -1,5 +1,7 @@
 import React, { ReactElement, useState, ChangeEvent } from 'react';
 import { MDBInputGroup, MDBInput, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 interface SearchProps {
   filteredPokemon: (searchTerm: string) => void;
