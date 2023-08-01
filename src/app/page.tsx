@@ -1,8 +1,6 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import styled from 'styled-components';
 import Search from './components/Search';
 import Card from './components/Card';

@@ -1,25 +1,19 @@
-import React, { ReactElement } from 'react';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardImage
-} from 'mdb-react-ui-kit';
+/* eslint-disable @next/next/no-img-element */
+import React, { ReactElement } from "react";
+import { Card, CardBody, CardSubtitle, CardText, CardTitle } from "reactstrap";
+
 
 interface CardProps {
-  pokemon: any
+    pokemon: any;
 }
 
-export default function Card({ pokemon }: CardProps): ReactElement {
+export default function PokemonCard({ pokemon }: CardProps): ReactElement {
   return (
-    <MDBCard className='custom-card'>
-      <MDBCardImage src={pokemon.sprites.front_default} position='top' alt='Card Image' />
-      <MDBCardBody>
-        <MDBCardTitle style={{fontFamily: 'comic-sans'}}>{pokemon.name}</MDBCardTitle>
-      </MDBCardBody>
-    </MDBCard>
+    <Card className="custom-card" style={{ height: '310px', display:'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around'}}>
+      <img src={pokemon.sprites.front_default} alt="Card Image" height={'200px'} />
+      <CardBody>
+        <CardTitle style={{ fontFamily: "comic-sans", fontSize: '20px' }}>{pokemon.name}</CardTitle>
+      </CardBody>
+    </Card>
   );
 }
-
