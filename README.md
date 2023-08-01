@@ -2,7 +2,7 @@
 
 Um projeto de Pokédex desenvolvido usando React, Next.js, TypeScript, Reactstrap e Styled Components, com a fonte de Pokémon obtida no site dafont.com e integração com a Poke API.
 
-![Pokédex](./pokedex-screenshot.png)
+![Pokédex](./.github/pokedex-image.png)
 
 ## Funcionalidades
 
